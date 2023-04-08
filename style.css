@@ -69,6 +69,7 @@ table {
   --warningColor : #F7C04A;   
   --whiteColor : #fff;
   --productBgColor : #1F4068;
+  transition: 0.3s ease-in-out;
 }
 
 /*-------------------------------Cart_container  & childs ------------------------------*/
