@@ -2,11 +2,87 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body> 
-    <script src="./shoppingcCart.js"></script>
+<body>
+    <main class="cart_container">
+      <header class="header_container">
+        <div class="cart_header">
+            <span id="menubar">
+                <i class="fa-solid fa-bars fa-2X"></i>
+            </span>
+            <p id="header-title">Jasmine's perfume SHOP</p>
+            <div class="cart-header-bar">
+              <input type="checkbox" class='dark_mode' id="dark_mode" />
+              <label for="dark_mode">
+               <p id="light-mode">Light</p>
+               <p id="dark-mode">Dark</p>
+            </label>
+              <span id="cart-icon">
+                <i class="fa-solid fa-cart-shopping fa-2X"></i>
+              </span>
+            </div>
+        </div>
+      </header>
+       <section class="products_container">
+         <section class="products"> 
+            <div class="product">
+                <div class="img_container">
+                    <img src="./images/product-1.jpg" alt="product-1" id="product-img">
+                </div>
+                <div class="product_dec">
+                    <p id="product-title">title</p>
+                    <p id="product-price">price</p>
+                </div>
+                <div class="product_btn">
+                    <button>
+                        add to <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="product"></div>
+            <div class="product"></div>
+            <div class="product"></div>
+            <div class="product"></div>
+            <div class="product"></div>
+            <div class="product"></div>
+          </section>
+        </section>
+        <section class="cart-center">
+            <div class="backdrop"></div>
+            <!------------------- cart ------------------->
+            <div class="cart">
+            <!-- <button class="btn show-modal">show modal</button> -->
+            <h2 class="cart-title">Your Cart</h2>
+            <div class="cart-content">
+              <!-- single item -->
+              <div class="cart-item">
+                <img class="cart-item-img" src="./images/product-1.jpg" />
+                <div class="cart-item-desc">
+                  <h4>product title</h4>
+                  <h5>$ 12.99</h5>
+                </div>
+                <div class="cart-item-conteoller">
+                  <i class="fas fa-chevron-up"></i>
+                  <p>1</p>
+                  <i class="fas fa-chevron-down"></i>
+                </div>
+              </div>
+            </div> 
+            <div class="cart-footer">
+              <span class="cart-total">total price : 90 $</span>
+              <button  class="btn clear-cart"> clear cart</button>
+              <button class="btn cart-item-confirm">confirm</button>
+            </div>
+          </div>
+      </section>
+       <footer>
+        <p>desined by jasmine.arabgard 2023</p>
+       </footer>
+    </main>
+    <script src="./app.js"></script>
 </body>
 </html>
