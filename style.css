@@ -55,7 +55,7 @@ table {
     --decColor : #babbbb;
     --warningColor : #F7C04A;   
     --whiteColor : #fff; 
-    --productBgColor : #fff;
+    --productBgColor : var(--whiteColor);
 }
 
 .dark_mode {
@@ -63,7 +63,7 @@ table {
   --primaryColor : var(--whiteColor);
   --secondaryColor : #F4ABC4;
   --dangerColor :#DA0037;
-  --infoColor :#fff;
+  --infoColor : var(--whiteColor);
   --checkColor : #8B9A46;
   --decColor : #babbbb;
   --warningColor : #F7C04A;   
@@ -132,7 +132,7 @@ table {
     background-color: var(---bodyColor);
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
     margin: 2rem auto;
-    column-gap: 10px;
+    column-gap: 15px;
     row-gap: 20px;
 }
 
@@ -357,7 +357,7 @@ table {
 
 .cart-header-bar label #light-mode{
     margin-left:4px;
-    color: var(--secondaryColor);
+    color: var(--whiteColor);
     font-weight: bold;
 }
 
@@ -380,7 +380,7 @@ table {
 }
 
 .cart-header-bar input:checked + label {
-	background-color: var(--whiteColor);
+	background-color: var(--productBgColor);
 }
 
 .cart-header-bar input:checked + label:after {
