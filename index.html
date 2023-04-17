@@ -21,54 +21,28 @@
                <p id="light-mode">Light</p>
                <p id="dark-mode">Dark</p>
             </label>
-              <span id="cart-icon">
+              <span class="cart-icon">
                 <i class="fa-solid fa-cart-shopping fa-2X"></i>
               </span>
             </div>
         </div>
       </header>
        <section class="products_container">
-         <section class="products"> 
-            <!-- <div class="product">
-                <div class="img_container">
-                    <img src="./images/product-1.jpg" alt="product-1" id="product-img">
-                </div>
-                <div class="product_dec">
-                    <p id="product-title">title</p>
-                    <p id="product-price">price</p>
-                </div>
-                <div class="product_btn">
-                    <button>
-                        add to <i class="fa-solid fa-cart-plus"></i>
-                    </button>
-                </div>
-            </div> -->
-          </section>
+         <section class="products"></section>
         </section>
         <section class="cart-center">
             <div class="backdrop"></div>
             <!------------------- cart ------------------->
             <div class="cart">
             <!-- <button class="btn show-modal">show modal</button> -->
+            <span><i class="fa-solid fa-xmark colse-cart-modal"></i></span>
             <h2 class="cart-title">Your Cart</h2>
             <div class="cart-content">
               <!-- single item -->
-              <div class="cart-item">
-                <img class="cart-item-img" src="./images/product-1.jpg" />
-                <div class="cart-item-desc">
-                  <h4>product title</h4>
-                  <h5>$ 12.99</h5>
-                </div>
-                <div class="cart-item-conteoller">
-                  <i class="fas fa-chevron-up"></i>
-                  <p>1</p>
-                  <i class="fas fa-chevron-down"></i>
-                </div>
-              </div>
             </div> 
             <div class="cart-footer">
-              <span class="cart-total">total price : 90 $</span>
-              <button  class="btn clear-cart"> clear cart</button>
+              <span><p class="cart-total"></p></span>
+              <button  class="btn clear-cart">clear cart</button>
               <button class="btn cart-item-confirm">confirm</button>
             </div>
           </div>
@@ -80,3 +54,5 @@
     <script type='module' src="./app.js"></script>
 </body>
 </html>
+
+
