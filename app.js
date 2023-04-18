@@ -157,7 +157,7 @@ class UI {
 
     singleItemButton(id) {
         const buttn = buttonsDOM.find(item => parseInt(item.dataset.id) === parseInt(id));
-        buttn.innerHTML = `add to <i class="fa-solid fa-cart-plus"></i>`;
+        buttn.innerText = `add to cart`;
         buttn.disabled = false;
     }
 }
