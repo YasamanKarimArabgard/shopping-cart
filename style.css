@@ -92,13 +92,12 @@ table {
     background-color: var(--secondaryColor);
 }
 .cart_header{  
-    width: 90vw;
+    width: 65%;
     height: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-weight: bolder;
 }
 
 #menubar, .cart-icon{
@@ -114,6 +113,7 @@ table {
 #header-title{
     color: var(--primaryColor);
     font-size: 1.3rem;
+    margin-right: 5px;
 }
 
 /*----------------products container ---*/
@@ -342,6 +342,9 @@ table {
       max-width: 50rem;
       width: calc(100vw - 2rem);
       padding: 0;
+    }
+    #menubar{
+      display: none;
     }
   }
   
