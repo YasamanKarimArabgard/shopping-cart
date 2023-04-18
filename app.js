@@ -37,9 +37,7 @@ class UI {
            <p id="product-price">${item.price} $</p>
            </div>
            <div class="product_btn">
-           <button class="btn add-to-cart" data-id=${item.id}>
-                   add to <i class="fa-solid fa-cart-plus"></i>
-                   </button>
+           <button class="btn add-to-cart" data-id=${item.id}>add to cart</button>
                    </div>
                    </div>`
             productsDOM.innerHTML = result;
