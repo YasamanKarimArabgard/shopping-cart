@@ -6,6 +6,7 @@ const cartBtn = document.querySelector('.fa-cart-shopping');
 const closeCartBtn = document.querySelector('.colse-cart-modal');
 const cartContent = document.querySelector('.cart-content');
 const clearCartBtn = document.querySelector('.clear-cart');
+const cartBadge = document.querySelector('.cart-badge');
 
 const cartTotal = document.querySelector('.cart-total');
 const cartItem = document.querySelector('.cart-item');
@@ -74,9 +75,10 @@ class UI {
 
         const totalPrice = cart.reduce((acc, curr) => {
             tempCartItems += curr.quantity;
+            cartBadge.innerText = tempCartItems
             return acc + curr.quantity * curr.price;
         }, 0)
-        cartTotal.innerText = `total price : ${totalPrice.toFixed(2)}$`
+        cartTotal.innerText = `total price : ${totalPrice.toFixed(2)} $`
         // cartItem.innerText = tempCartItems;
     }
     addCartItem(subtractedProduct) {
