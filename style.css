@@ -328,6 +328,7 @@ table {
   .cart-footer span {
     display: inline-block;
     margin-right: 1rem;
+    padding-bottom: 2rem;
   }
   
   .clear-cart {
