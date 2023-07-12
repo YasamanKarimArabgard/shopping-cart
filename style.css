@@ -311,6 +311,7 @@ table {
     color: var(--dangerColor);
     float: right;
     cursor: pointer;
+    padding: 1rem;
   }
 
   .cart-warning{
