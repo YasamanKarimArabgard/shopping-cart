@@ -85,7 +85,7 @@ table {
 /*----------------cart header---------*/
 
 .header_container{
-    width: 100%;
+    width: 100vw;
     height: 100%;
     grid-column: 1/4;
     grid-row: 1/2;
@@ -99,8 +99,9 @@ table {
     width: 100%;
     max-width: 1170px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    padding-right:0.5rem ;
+    padding-left: 0.5rem;
 }
 
 .cart-header-bar{
@@ -127,7 +128,7 @@ table {
   position: absolute;
   top: 0;
   padding: 5px 10px;
-  background-color: var(--infoColor);
+  background-color: #89375F;
   color: #f6f6f6;
   border-radius: 50%;
   margin-top: 5px;
@@ -311,6 +312,7 @@ table {
     color: var(--dangerColor);
     float: right;
     cursor: pointer;
+    padding: 1rem;
   }
 
   .cart-warning{
@@ -328,6 +330,7 @@ table {
   .cart-footer span {
     display: inline-block;
     margin-right: 1rem;
+    padding-bottom: 2rem;
   }
   
   .clear-cart {
